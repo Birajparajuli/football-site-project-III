@@ -1,3 +1,80 @@
-.main-nav{
-    background-color: red;
+:root{
+    --primary-color:#D83F87;
+    --color-1:#2A1B3D;
+    --color-2:#44318D;
+    --color-3:#E98074;
+    --white:#A4B3B6; 
+    --black:
 }
+/* Navbar Section Styling -- Start*/
+
+.main-nav{
+    background-color: var(--color-3);
+    padding: 0px 10%;
+}
+
+.logo h1{
+    font-style: italic;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px ;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nav-links li{
+    padding: 10px;
+}
+.nav-links a{
+    color: #222;
+    text-decoration: none;
+}
+
+.nav-links li:hover{
+    color: #ffff;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.search input{
+    height: 40px;
+    width: 50%;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.icons{
+    display: flex;
+    
+}
+.icon{
+    padding: 0px 10px;
+}
+
+.bottom-nav{
+    margin-top: 10px;
+}
+
+
+
+
+/* Navbar Styling ---END */

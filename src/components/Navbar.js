@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ShoppingCart, User, Heart } from 'react-feather';
 
 import '../css/components.css';
 
@@ -6,7 +7,39 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className="main-nav">
-                <h1>This is navbar</h1>
+                <div className="top-nav">
+                    <div className="logo">
+
+                        <h1>FS.</h1>
+                    </div>
+                    <div className="search">
+                        <input type="text" placeholder={"Search products"} />
+                    </div>
+                    <div className="icons">
+                        <div className="icon">
+                            <ShoppingCart />
+                        </div>
+                        <div className="icon">
+                            <Heart />
+                        </div>
+                        <div className="icon">
+                            <User />
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div className="bottom-nav">
+                    <ul className="nav-links">
+                        <li><a href="https://#">Catagory 1</a></li>
+                        <li><a href="https://#">Catagory 1</a></li>
+                        <li><a href="https://#">Catagory 1</a></li>
+                        <li><a href="https://#">Catagory 1</a></li>
+                        <li><a href="https://#">Catagory 1</a></li>
+                    </ul>
+                </div>
             </div>
 
         )
