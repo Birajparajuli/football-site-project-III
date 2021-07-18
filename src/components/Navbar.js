@@ -10,14 +10,15 @@ export default class Navbar extends Component {
                 <div className="top-nav">
                     <div className="logo">
 
-                        <h1>FS.</h1>
+                        <h1>SportHub</h1>
                     </div>
                     <div className="search">
-                        <input type="text" placeholder={"Search products"} />
+                        <input type="text" placeholder={"Search products......"} />
                     </div>
                     <div className="icons">
-                        <div className="icon">
+                        <div className="icon cart-icon">
                             <ShoppingCart />
+                            <span>2</span>
                         </div>
                         <div className="icon">
                             <Heart />
@@ -34,10 +35,10 @@ export default class Navbar extends Component {
                 <div className="bottom-nav">
                     <ul className="nav-links">
                         <li><a href="https://#">Catagory 1</a></li>
-                        <li><a href="https://#">Catagory 1</a></li>
-                        <li><a href="https://#">Catagory 1</a></li>
-                        <li><a href="https://#">Catagory 1</a></li>
-                        <li><a href="https://#">Catagory 1</a></li>
+                        <li><a href="https://#">Catagory 2</a></li>
+                        <li><a href="https://#">Catagory 3</a></li>
+                        <li><a href="https://#">Catagory 4</a></li>
+                        <li><a href="https://#">Catagory 5</a></li>
                     </ul>
                 </div>
             </div>

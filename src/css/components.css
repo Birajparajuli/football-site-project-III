@@ -9,20 +9,24 @@
 /* Navbar Section Styling -- Start*/
 
 .main-nav{
-    background-color: var(--color-3);
-    padding: 0px 10%;
+    
+    
 }
 
 .logo h1{
     font-style: italic;
+    color: var(--color-1);
 }
 
 .top-nav{
+    padding: 0px 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 10px ;
 }
+
+
 
 .nav-links{
     display: flex;
@@ -41,9 +45,7 @@
 }
 
 .nav-links li:hover{
-    color: #ffff;
-    background-color: var(--primary-color);
-    padding: 10px;
+    border-bottom:4px solid #2A1B3D;
 }
 
 .search{
@@ -51,14 +53,31 @@
     justify-content: center;
     align-items: center;
     width: 90%;
+    
 }
 
-.search input{
+.search input[type=text]{
     height: 40px;
     width: 50%;
     align-items: center;
     border-radius: 6px;
-    border: none;
+    border: 3px solid #2A1B3D;
+    background-image: url('../img/search.svg');
+    background-position: 5px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+input:focus{
+    border-radius: 6px;
+    border: 3px solid #2A1B3D;
+    
+    
+}
+input::placeholder{
+    font-family: inherit;
+    font-weight: 600;
+    
 }
 
 
@@ -70,7 +89,24 @@
     padding: 0px 10px;
 }
 
+.cart-icon{
+    position: relative;
+}
+
+.cart-icon span{
+    top: -10px;
+    left: 24px;
+    position: absolute;
+    background-color: #ff1e3c;
+    padding: 4px 8px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
 .bottom-nav{
+    background-color: var(--color-3);
     margin-top: 10px;
 }
 
