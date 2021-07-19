@@ -6,10 +6,11 @@
     --white:#A4B3B6; 
     --black:
 }
+
 /* Navbar Section Styling -- Start*/
 
 
-
+/* Top Nav */
 .logo a{
     text-decoration: none;
 }
@@ -28,28 +29,7 @@
 
 
 
-.nav-links{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
 
-.nav-links li{
-    padding: 10px;
-}
-.nav-links a{
-    color: #222;
-    text-decoration: none;
-}
-
-.nav-links a:hover{
-    
-    padding: 7px 0;
-    border-bottom:4px solid #2A1B3D;
-    transition: border .1s ease-in .1s;
-}
 
 .search{
     display: flex;
@@ -97,8 +77,8 @@ input::placeholder{
 }
 
 .cart-icon span{
-    top: -10px;
-    left: 24px;
+    top: -11px;
+    left: 30px;
     position: absolute;
     background-color: #ff1e3c;
     padding: 4px 8px;
@@ -108,11 +88,34 @@ input::placeholder{
     font-weight: bold;
 }
 
+/* Bottom Nav */
+
 .bottom-nav{
     background-color: var(--color-3);
     margin-top: 10px;
+    padding: 10px;
 }
 
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nav-links a{
+    color: #222;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-links a:hover{
+    padding-bottom: 7px;
+    border-bottom:4px solid #2A1B3D;
+    transition: border .1s ease-in .1s;
+}
 
 
 
