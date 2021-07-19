@@ -8,11 +8,11 @@
 }
 /* Navbar Section Styling -- Start*/
 
-.main-nav{
-    
-    
-}
 
+
+.logo a{
+    text-decoration: none;
+}
 .logo h1{
     font-style: italic;
     color: var(--color-1);
@@ -44,8 +44,11 @@
     text-decoration: none;
 }
 
-.nav-links li:hover{
+.nav-links a:hover{
+    
+    padding: 7px 0;
     border-bottom:4px solid #2A1B3D;
+    transition: border .1s ease-in .1s;
 }
 
 .search{
@@ -86,7 +89,7 @@ input::placeholder{
     
 }
 .icon{
-    padding: 0px 10px;
+    padding: 0px 15px;
 }
 
 .cart-icon{

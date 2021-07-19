@@ -9,8 +9,9 @@ export default class Navbar extends Component {
             <div className="main-nav">
                 <div className="top-nav">
                     <div className="logo">
-
-                        <h1>SportHub</h1>
+                        <a href="https://#">
+                            <h1>SportHub</h1>
+                        </a>
                     </div>
                     <div className="search">
                         <input type="text" placeholder={"Search products......"} />
