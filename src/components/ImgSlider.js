@@ -8,6 +8,7 @@ export default class ImgSlider extends Component {
         return (
             <>
                 <img src={Slider11} alt="slider-1" />
+                <h3>Product Name</h3>
             </>
         )
 
