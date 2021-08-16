@@ -10,7 +10,7 @@ export default class Navbar extends Component {
                 <div className="top-nav">
                     <div className="logo">
                         <a href="https://#">
-                            <h1>SaureyHub</h1>
+                            <h1>FootballHub</h1>
                         </a>
                     </div>
                     <div className="search">
@@ -35,11 +35,11 @@ export default class Navbar extends Component {
                 </div>
                 <div className="bottom-nav">
                     <ul className="nav-links">
-                        <li><a href="https://#">Catagory 1</a></li>
-                        <li><a href="https://#">Catagory 2</a></li>
-                        <li><a href="https://#">Catagory 3</a></li>
-                        <li><a href="https://#">Catagory 4</a></li>
-                        <li><a href="https://#">Catagory 5</a></li>
+                        <li><a href="https://#">Category 1</a></li>
+                        <li><a href="https://#">Category 2</a></li>
+                        <li><a href="https://#">Category 3</a></li>
+                        <li><a href="https://#">Category 4</a></li>
+                        <li><a href="https://#">Category 5</a></li>
                     </ul>
                 </div>
             </div>
