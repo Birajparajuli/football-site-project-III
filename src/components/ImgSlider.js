@@ -12,10 +12,10 @@ export default class ImgSlider extends Component {
         return (
             <>
                 <ReactSlidy itemsToPreload={4}>
-                    <img src={Slider1} />
-                    <img src={Slider2} />
-                    <img src={Slider3} />
-                    <img src={Slider4} />
+                    <img src={Slider1} alt="Img" />
+                    <img src={Slider2} alt="Img" />
+                    <img src={Slider3} alt="Img" />
+                    <img src={Slider4} alt="Img" />
 
                 </ReactSlidy>
             </>
