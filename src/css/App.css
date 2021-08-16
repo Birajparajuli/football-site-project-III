@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.list-header{
+    color:#2A1B3D ;
+    text-align: center;
+    margin: 30px;
+    font-size: 35px;
+    
+}

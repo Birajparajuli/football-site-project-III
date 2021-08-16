@@ -6,6 +6,8 @@ import Slider2 from '../img/slider/Slider2.png';
 import Slider3 from '../img/slider/Slider3.png';
 import Slider4 from '../img/slider/Slider4.png';
 import 'react-slidy/lib/styles.css';
+
+
 export default class ImgSlider extends Component {
 
     render() {
@@ -18,6 +20,8 @@ export default class ImgSlider extends Component {
                     <img src={Slider4} alt="Img" />
 
                 </ReactSlidy>
+
+
             </>
         )
 
