@@ -10,7 +10,7 @@ export default class Navbar extends Component {
                 <div className="top-nav">
                     <div className="logo">
                         <a href="https://#">
-                            <h1>SportHub</h1>
+                            <h1>SaureyHub</h1>
                         </a>
                     </div>
                     <div className="search">
