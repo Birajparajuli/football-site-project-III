@@ -8,8 +8,7 @@ function ProductList() {
             <SingleProduct />
             <SingleProduct />
             <SingleProduct />
-            <SingleProduct />
-            <SingleProduct />
+
 
 
         </div>
