@@ -1,15 +1,19 @@
 import React from 'react';
 import './css/App.css';
 import Navbar from './components/Navbar';
-import ImgSlider from './components/ImgSlider';
+// import ImgSlider from './components/ImgSlider';
 import ProductList from './components/ProductList';
 import InfoBox from './components/InfoBox';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
+import { SliderData } from './data/SliderData';
+
 function App() {
   return (
     <>
       <Navbar />
-      <ImgSlider />
+      <Hero slides ={SliderData}/>
+      {/* <ImgSlider /> */}
       <h2 className="list-header">Trending Products</h2>
       <ProductList />
       <h2 className="list-header">New Arrivals</h2>
