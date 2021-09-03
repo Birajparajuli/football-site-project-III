@@ -110,7 +110,7 @@ input::placeholder {
 /* Slider Start */
 .heroWrapper {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +127,10 @@ input::placeholder {
   padding: 10px;
   margin-right: 10px;
   user-select: none;
+  transition: all 0.4s;
+}
+.arrow:hover {
+  background-color: var(--color-1);
 }
 .sliderButtons {
   position: absolute;
@@ -163,19 +167,22 @@ input::placeholder {
 }
 
 .heroSlider::before {
-  content: " ";
+  content: "  ";
   position: absolute;
   z-index: 2;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   bottom: 0vh;
   left: 0;
   overflow: hidden;
-  opacity: 0.4;
+  /* opacity: 0.4; */
+  /* background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 191, 0.103));
+   */
+  background: rgb(2, 0, 36);
   background: linear-gradient(
-    rgba(0, 0, 0, 0.548) 100%,
-    rgba(0, 0, 0, 0.678) 50%,
-    rgba(0, 0, 0, 0.863) 100%
+    90deg,
+    rgba(2, 0, 36, 0.9139005944174545) 37%,
+    rgba(68, 49, 141, 0.5441526952577906) 100%
   );
 }
 .heroContent {
@@ -184,37 +191,56 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  /* background: var(--color-4); */
   color: #fff;
   padding: 0 5%;
+  transition: 3000 ease;
 }
 
 .heroContent h1 {
   display: inline-block;
-  font-size: clamp(1rem, 8vw, 3rem);
-  font-weight: 600;
-  /* text-transform: uppercase; */
+  font-weight: 700;
+  font-size: 3rem;
   text-shadow: 0, 0, 0, 20px rgba(0, 0, 0, 0.4);
+  margin: 0 0 18px;
 }
 
 .heroContent p {
-  margin-bottom: 0.8rem;
+  margin: 0 0 18px;
+  font-size: 1.5rem;
 }
 
-.heroContent button {
+/* Btn Global */
+.btn {
+  font-size: 12px;
   display: inline-block;
-  padding: 10px;
-  border: none;
-  background-color: var(--color-1);
-  color: #fff;
-  font-size: 1.2rem;
-  width: 30%;
+  padding: 20px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 100%;
+  border: none;
+  outline: 0;
+  color: #fff;
+  background-color: var(--color-4);
+}
+
+/* Set width of the slider button */
+.btn-hero {
+  width: 25%;
+}
+.btn-hero:hover {
+  filter: drop-shadow(0 8px 24px rgba(33, 38, 46, 0.25));
+  transform: scale(1.05);
 }
 /* Slider End */
 /* Single Product --Start */
 
 .product-image img {
+  height: 300px;
   width: 250px;
   border-radius: 6px 6px 0 0;
   transition: all 0.2s ease-in-out;
@@ -224,10 +250,15 @@ input::placeholder {
 .product-image {
   overflow: hidden;
   border-radius: 6px;
+  object-fit: cover;
+}
+.product-image img {
+  height: 100%;
+  width: 100%;
 }
 
 .product-image img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .product-single {
@@ -292,26 +323,30 @@ input::placeholder {
 .product-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 10%;
+  align-items: center;
   /* margin: 40px auto; */
 }
 /* Product List-- End */
 
 /* InfoBox --Start  */
 .info-box {
-  height: 50vh;
+  min-height: 50vh;
   background-image: linear-gradient(#321a92ad, #1d063bd0),
     url("../img/world.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-wrap: wrap;
   padding: 3% 10%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .info-left {
   text-align: center;
+  padding-right: 40px;
 }
 
 .info-left h3 {
@@ -327,6 +362,7 @@ input::placeholder {
 
 .info-right {
   color: #fff;
+  padding-left: 40px;
 }
 
 .info-right h2,
@@ -352,13 +388,13 @@ h3 {
   color: var(--color-4);
 }
 
-.btn {
+/* .btn {
   padding: 12px;
   font-size: 16px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-}
+} */
 /* InfoBox --End  */
 
 /* Footer --Start */

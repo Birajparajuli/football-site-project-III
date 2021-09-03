@@ -52,7 +52,7 @@ const Hero = ({slides}) => {
                         <div className="heroContent">
                             <h1>{slide.title}</h1>
                             <p>{slide.price}</p>
-                            <button to ={slide.path}>{slide.label}</button>
+                            <button className="btn btn-hero" to ={slide.path}>{slide.label}</button>
                         </div>
                     </div>
                     )}
@@ -64,7 +64,7 @@ const Hero = ({slides}) => {
                 <div className="prevArrow " onClick={prevSlide}>
                     <ArrowLeftCircle className="arrow"/>
                 </div>
-                <div className="nextArrow arrow" onClick={nextSlide}>
+                <div className="nextArrow" onClick={nextSlide}>
                     <ArrowRightCircle className="arrow"/>
                 </div>
             </div>

@@ -1,17 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.list-header{
-    color:#2A1B3D ;
-    text-align: center;
-    margin: 30px;
-    font-size: 35px;
-    
+.list-header {
+  color: #2a1b3d;
+  text-align: center;
+  margin: 30px;
+  font-size: 35px;
 }
 
-.infobox{
-    margin: 70px auto;
+.infobox {
+  margin: 70px auto;
 }

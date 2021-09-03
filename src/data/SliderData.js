@@ -4,7 +4,7 @@ import image3 from '../img/slider/Slider1.png';
 
 export const SliderData = [
 {
-    title:'Messi Jersey No .30 Paris Saint German',
+    title:'Messi jersey No .30 Paris Saint German',
     price:"Rs. 5000",
     path:'/homes',
     image: image1,
@@ -12,7 +12,7 @@ export const SliderData = [
     label:"View Product"
 },
 {
-    title:'Ronaldo Jersey No .30 Manchester United',
+    title:'Ronaldo Jersey No .07 Manchester United',
     price:"Rs. 5000",
     path:'/homes',
     image: image2,
@@ -25,6 +25,6 @@ export const SliderData = [
     path:'/homes',
     image: image3,
     alt:'Messi Jersey',
-    label:"View Product"
+    label:"Learn More"
 }
 ]
