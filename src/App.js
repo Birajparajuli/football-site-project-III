@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Import Pages
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/HomePage";
 import ProductInfo from "./pages/ProductInfo";
 import Category from "./pages/Category";
 

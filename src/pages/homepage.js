@@ -7,7 +7,7 @@ import InfoBox from "../components/InfoBox";
 import Footer from "../components/Footer";
 
 import { SliderData } from "../data/SliderData";
-function homepage() {
+function HomePage() {
   return (
     <>
       <Hero slides={SliderData} />
@@ -28,4 +28,4 @@ function homepage() {
   );
 }
 
-export default homepage;
+export default HomePage;
