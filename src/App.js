@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Import Pages
-import Homepage from "./pages/HomePage";
+import Home from "./pages/Home";
 import ProductInfo from "./pages/ProductInfo";
 import Category from "./pages/Category";
 
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Homepage />
+          <Home />
         </Route>
         <Route path="/details/:id">
           <ProductInfo />
