@@ -14,7 +14,7 @@ function ProductList() {
     <div className="product-list">
       {data.map((product) => (
         <div key={product.id}>
-          <SingleProduct name={product.name} price={product.price} />
+          <SingleProduct product={product} />
         </div>
       ))}
     </div>

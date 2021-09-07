@@ -3,11 +3,14 @@ import { ShoppingCart, Heart, Share2 } from "react-feather";
 import "../css/components.css";
 import Messi_PSG from "../img/product/Messi_PSG.jpeg";
 
-const SingleProduct = ({ name, price }) => {
+const SingleProduct = ({ product }) => {
   return (
     <div className="product-single">
       <div className="product-image">
-        <img src={Messi_PSG} alt="messi-img" />
+        <img
+          src={"http://localhost:1337" + product.image.url}
+          alt={product.name}
+        />
         <div className="fav-heart">
           <Heart className="round-icon" />
         </div>
@@ -18,8 +21,8 @@ const SingleProduct = ({ name, price }) => {
       </div>
       <div className="product-info">
         <div className="info">
-          <h4>{name}</h4>
-          <span>Rs.{price}</span>
+          <h4>{product.name}</h4>
+          <span>Rs.{product.price}</span>
         </div>
         <span className="vertical-rod"></span>
         <div className="add-cart">
