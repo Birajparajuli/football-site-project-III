@@ -4,7 +4,9 @@ import "../css/components.css";
 import useFetch from "../hooks/useFetch";
 
 function ProductList() {
-  const { loading, error, data } = useFetch("http://localhost:1337/products");
+  const { loading, error, data } = useFetch(
+    "https://football-site-backend.herokuapp.com/products"
+  );
 
   if (loading) return <p>Loading data from Server</p>;
   if (error) return <p>Problem Loading data !!!!</p>;

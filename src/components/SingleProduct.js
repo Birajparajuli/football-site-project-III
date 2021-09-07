@@ -1,14 +1,16 @@
 import React from "react";
-import { ShoppingCart, Heart, Share2 } from "react-feather";
+import { Heart, Share2 } from "react-feather";
 import "../css/components.css";
-import Messi_PSG from "../img/product/Messi_PSG.jpeg";
+import { Link } from "react-router-dom";
 
 const SingleProduct = ({ product }) => {
   return (
     <div className="product-single">
       <div className="product-image">
         <img
-          src={"http://localhost:1337" + product.image.url}
+          src={
+            "https://football-site-backend.herokuapp.com" + product.image.url
+          }
           alt={product.name}
         />
         <div className="fav-heart">
@@ -21,12 +23,14 @@ const SingleProduct = ({ product }) => {
       </div>
       <div className="product-info">
         <div className="info">
-          <h4>{product.name}</h4>
-          <span>Rs.{product.price}</span>
+          <h5>{product.name}</h5>
+          <h4>Rs.{product.price}</h4>
         </div>
         <span className="vertical-rod"></span>
+
         <div className="add-cart">
-          <ShoppingCart />
+          <Link to={`/details/${product.id}`}>ADD TO CART</Link>
+          {/* <ShoppingCart /> */}
         </div>
       </div>
     </div>

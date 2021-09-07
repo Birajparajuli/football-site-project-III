@@ -1,32 +1,31 @@
 import React from "react";
 import "./css/App.css";
+
 import Navbar from "./components/Navbar";
-// import ImgSlider from './components/ImgSlider';
-import ProductList from "./components/ProductList";
-import InfoBox from "./components/InfoBox";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import { SliderData } from "./data/SliderData";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//Import Pages
+import Homepage from "./pages/Homepage";
+import ProductInfo from "./pages/ProductInfo";
+import Category from "./pages/Category";
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero slides={SliderData} />
-      {/* <ImgSlider /> */}
-      <h2 className="list-header">Trending Products</h2>
-      <ProductList />
-      <h2 className="list-header">New Arrivals</h2>
-
-      <ProductList />
-      <br />
-      <InfoBox className="infobox" />
-      <h2 className="list-header">On Discount</h2>
-      <ProductList />
-
-      <br />
-      <Footer />
-    </>
+      <Switch>
+        <Route exact path="/">
+          <Homepage />
+        </Route>
+        <Route path="/details/:id">
+          <ProductInfo />
+        </Route>
+        <Route path="/category/:id">
+          <Category />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
