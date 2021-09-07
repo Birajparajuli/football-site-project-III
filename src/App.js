@@ -1,18 +1,18 @@
-import React from 'react';
-import './css/App.css';
-import Navbar from './components/Navbar';
+import React from "react";
+import "./css/App.css";
+import Navbar from "./components/Navbar";
 // import ImgSlider from './components/ImgSlider';
-import ProductList from './components/ProductList';
-import InfoBox from './components/InfoBox';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import { SliderData } from './data/SliderData';
+import ProductList from "./components/ProductList";
+import InfoBox from "./components/InfoBox";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import { SliderData } from "./data/SliderData";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero slides ={SliderData}/>
+      <Hero slides={SliderData} />
       {/* <ImgSlider /> */}
       <h2 className="list-header">Trending Products</h2>
       <ProductList />
@@ -24,11 +24,10 @@ function App() {
       <h2 className="list-header">On Discount</h2>
       <ProductList />
 
-
       <br />
       <Footer />
     </>
-  )
+  );
 }
 
 export default App;

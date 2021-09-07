@@ -181,8 +181,8 @@ input::placeholder {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 0.9139005944174545) 37%,
-    rgba(68, 49, 141, 0.5441526952577906) 100%
+    rgba(2, 0, 36, 0.596) 37%,
+    rgba(67, 49, 141, 0.137) 100%
   );
 }
 .heroContent {
@@ -234,7 +234,6 @@ input::placeholder {
 }
 .btn-hero:hover {
   filter: drop-shadow(0 8px 24px rgba(33, 38, 46, 0.25));
-  transform: scale(1.05);
 }
 /* Slider End */
 /* Single Product --Start */
