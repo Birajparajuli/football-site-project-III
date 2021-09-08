@@ -8,12 +8,7 @@ const SingleProduct = ({ product }) => {
     <div className="product-single">
       <div className="product-image">
         <Link className="link" to={`/details/${product.id}`}>
-          <img
-            src={
-              "https://football-site-backend.herokuapp.com" + product.image.url
-            }
-            alt={product.name}
-          />
+          <img src={product.image.url} alt={product.name} />
         </Link>
         <div className="fav-heart">
           <Heart className="round-icon" />

@@ -18,10 +18,7 @@ function ProductInfo() {
 
       <div className="info-container">
         <div className="left-container">
-          <img
-            src={"https://football-site-backend.herokuapp.com" + data.image.url}
-            alt={data.name}
-          />
+          <img src={data.image.url} alt={data.name} />
         </div>
 
         <div className="right-container">
