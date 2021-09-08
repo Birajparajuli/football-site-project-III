@@ -41,7 +41,13 @@ function Navbar() {
       <div className="bottom-nav">
         <ul className="nav-links">
           {data.map((category) => (
-            <Link key={category.id}>{category.name}</Link>
+            <Link
+              className="nav-link"
+              key={category.id}
+              to={`categories/${category.id}`}
+            >
+              {category.name}
+            </Link>
           ))}
         </ul>
       </div>

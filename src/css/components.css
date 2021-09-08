@@ -86,7 +86,7 @@ input::placeholder {
 .bottom-nav {
   background-color: var(--color-1);
   margin-top: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .nav-links {
@@ -96,7 +96,7 @@ input::placeholder {
   justify-content: space-evenly;
 }
 
-.nav-links a {
+.nav-link {
   color: #fff;
   text-decoration: none;
   padding: 15px;
