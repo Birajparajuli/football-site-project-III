@@ -7,12 +7,14 @@ const SingleProduct = ({ product }) => {
   return (
     <div className="product-single">
       <div className="product-image">
-        <img
-          src={
-            "https://football-site-backend.herokuapp.com" + product.image.url
-          }
-          alt={product.name}
-        />
+        <Link className="link" to={`/details/${product.id}`}>
+          <img
+            src={
+              "https://football-site-backend.herokuapp.com" + product.image.url
+            }
+            alt={product.name}
+          />
+        </Link>
         <div className="fav-heart">
           <Heart className="round-icon" />
         </div>
@@ -23,14 +25,10 @@ const SingleProduct = ({ product }) => {
       </div>
       <div className="product-info">
         <div className="info">
-          <h5>{product.name}</h5>
-          <h4>Rs.{product.price}</h4>
-        </div>
-        <span className="vertical-rod"></span>
-
-        <div className="add-cart">
-          <Link to={`/details/${product.id}`}>ADD TO CART</Link>
-          {/* <ShoppingCart /> */}
+          <Link className="link" to={`/details/${product.id}`}>
+            <h5>{product.name}</h5>
+            <h4>Rs.{product.price}</h4>
+          </Link>
         </div>
       </div>
     </div>
