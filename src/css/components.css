@@ -11,10 +11,13 @@
 /* Navbar Section Styling -- Start*/
 
 /* Top Nav */
-.logo a {
+.logo {
   text-decoration: none;
 }
-.logo h1 {
+.logo-text {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
   font-style: italic;
   color: var(--color-1);
 }
@@ -298,11 +301,11 @@ input::placeholder {
 }
 
 .product-info {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  padding: 10px;
+  padding: 15px;
 }
-
+.link {
+  text-decoration: none;
+}
 .add-cart {
   /* border-left: 2px solid var(--color-1); */
   /* padding-left: 10px; */
@@ -311,18 +314,17 @@ input::placeholder {
   vertical-align: center;
 }
 
-.add-cart h4 {
-  /* padding: 10px; */
-  text-align: center;
-  border: 2px solid var(--primary-color);
-  border-radius: 3px;
-}
-
 .product-info h5 {
   font-weight: 500;
   font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
 }
 
+.product-info h4 {
+  color: #222;
+}
 /* .vertical-rod {
   height: 50px;
   width: 1px;

@@ -9,7 +9,9 @@ export default class Navbar extends Component {
       <div className="main-nav">
         <div className="top-nav">
           <div className="logo">
-            <Link to="/">FootballHub</Link>
+            <Link className="logo-text" to="/">
+              FootballHub
+            </Link>
           </div>
           <div className="search">
             <input type="text" placeholder={"Search products......"} />
