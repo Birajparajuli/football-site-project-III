@@ -25,6 +25,10 @@ const SingleProduct = ({ product }) => {
       </div>
       <div className="product-info">
         <div className="info">
+          <div className="cat-cards">
+            <span className="category-card cat-primary">Men</span>
+            <span className="category-card cat-secondary">New</span>
+          </div>
           <Link className="link" to={`/details/${product.id}`}>
             <h5>{product.name}</h5>
             <h4>Rs.{product.price}</h4>

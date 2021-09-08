@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
+import "./Style/productinfo.css";
+
 function ProductInfo() {
   const { id } = useParams();
   const { loading, error, data } = useFetch(
@@ -23,8 +25,10 @@ function ProductInfo() {
         </div>
 
         <div className="right-container">
-          <h2>{data.name}</h2>
-          <h3>{data.price}</h3>
+          <h2 className="product-title">{data.name}</h2>
+          <p className="product-description">{data.description}</p>
+          <h3 className="product-price">Rs.{data.price}</h3>
+          <button className="btn">ADD TO CART</button>
         </div>
       </div>
     </>

@@ -247,7 +247,7 @@ input::placeholder {
   border-radius: 6px 6px 0 0;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  margin-bottom: 0.8rem;
+  /* margin-bottom: 0.8rem; */
 }
 .product-image {
   overflow: clip;
@@ -268,6 +268,7 @@ input::placeholder {
   /* color: #fff; */
   border-radius: 6px;
   width: 250px;
+
   margin: 20px;
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -302,6 +303,7 @@ input::placeholder {
 
 .product-info {
   padding: 15px;
+  min-height: 130px;
 }
 .link {
   text-decoration: none;
@@ -324,6 +326,19 @@ input::placeholder {
 
 .product-info h4 {
   color: #222;
+}
+
+.category-card {
+  padding: 4px;
+  background-color: var(--primary-color);
+  font-size: 10px;
+  margin-right: 4px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.cat-cards {
+  margin-bottom: 10px;
 }
 /* .vertical-rod {
   height: 50px;
