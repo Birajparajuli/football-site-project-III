@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ProductList from "../components/ProductList";
+
 import useFetch from "../hooks/useFetch";
 import SingleProduct from "../components/SingleProduct";
 

@@ -25,6 +25,11 @@ function ProductInfo() {
           <h2 className="product-title">{data.name}</h2>
           <p className="product-description">{data.description}</p>
           <h3 className="product-price">Rs.{data.price}</h3>
+          <div className="product-amount">
+            <button className="btn amount-btn">-</button>
+            <p className="amount-counter">3</p>
+            <button className="btn amount-btn">+</button>
+          </div>
           <button className="btn">ADD TO CART</button>
         </div>
       </div>
