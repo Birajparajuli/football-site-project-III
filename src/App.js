@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import ProductInfo from "./pages/ProductInfo";
 import Category from "./pages/Category";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/categories/:id">
           <Category />
+        </Route>
+        <Route path="/cart">
+          <Cart />
         </Route>
       </Switch>
     </Router>

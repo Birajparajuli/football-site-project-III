@@ -501,3 +501,25 @@ h3 {
   padding: 15px;
 }
 /* Footer --End */
+
+/* Cart Item CSS Start */
+.cart-item {
+  display: flex;
+}
+.item-image img {
+  height: 200px;
+}
+.top-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus-minus {
+  display: flex;
+}
+/* Cart Item CSS End */

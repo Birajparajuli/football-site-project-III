@@ -27,8 +27,10 @@ function Navbar() {
         </div>
         <div className="icons">
           <div className="icon cart-icon">
-            <ShoppingCart />
-            <span>2</span>
+            <Link className="" to={`cart`}>
+              <ShoppingCart />
+              <span>2</span>
+            </Link>
           </div>
           <div className="icon">
             <Heart />
