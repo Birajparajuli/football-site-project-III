@@ -505,21 +505,43 @@ h3 {
 /* Cart Item CSS Start */
 .cart-item {
   display: flex;
+  margin: 30px 0;
+  /* background-color: brown; */
 }
 .item-image img {
   height: 200px;
+  border-radius: 6px;
 }
+
 .top-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
 }
 
 .bottom-items {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  align-items: center;
 }
-
+.item-details {
+  width: 100%;
+}
 .plus-minus {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.plus-minus p {
+  padding: 10px;
+}
+
+.lock-icon {
+  width: 20px;
+}
+
 /* Cart Item CSS End */

@@ -1,0 +1,29 @@
+.header {
+  background-color: rgb(54, 85, 187);
+  min-height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-list {
+  padding: 20px 10%;
+}
+
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.icon-btn h3 {
+  padding-left: 10px;
+}
+
+.cart-total-pay {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+  background-color: var(--color-3);
+}
