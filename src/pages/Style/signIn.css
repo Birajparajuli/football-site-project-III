@@ -1,0 +1,45 @@
+.sign-in-container {
+  display: flex;
+  padding: 20px 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-container {
+  width: 100%;
+}
+.sign-in-info {
+  width: 100%;
+}
+
+.or-bar {
+  display: flex;
+}
+
+.line {
+  height: 1px;
+  width: 30px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.form-items input {
+  border: 2px solid #cccbcb;
+  border-radius: 4px;
+  display: block;
+  width: 95%;
+  padding: 10px;
+}
+
+.form-items input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-items.sucess input {
+  border-color: green;
+}
+.form-items.error input {
+  border-color: red;
+}
