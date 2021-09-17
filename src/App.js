@@ -11,6 +11,7 @@ import ProductInfo from "./pages/productInfo/ProductInfo";
 import Category from "./pages/category/Category";
 import Cart from "./pages/cart/Cart";
 import SignIn from "./pages/signUp/SignIn";
+import LogIn from "./pages/logIn/LogIn";
 
 function App() {
   return (
@@ -29,8 +30,11 @@ function App() {
         <Route path="/cart">
           <Cart />
         </Route>
-        <Route path="/sign-in">
+        <Route path="/signup">
           <SignIn />
+        </Route>
+        <Route path="/login">
+          <LogIn />
         </Route>
       </Switch>
     </Router>

@@ -7,22 +7,26 @@
 
 .sign-up-form {
   background-color: rgb(255, 255, 255);
-  min-width: 600px;
+
   display: grid;
   place-items: center;
-  padding: 30px 40px;
+  padding: 20px 30px;
   border-radius: 6px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+.sign-title {
+  text-transform: none;
+  padding-bottom: 20px;
+}
 .or-bar {
+  padding: 10px;
   display: flex;
 }
 
 .line {
   height: 1px;
-  width: 30px;
-  background-color: black;
+  width: 250px;
+  background-color: rgb(48, 48, 48);
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -73,7 +77,7 @@
 }
 .google-btn {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid var(--color-4);
   width: 100%;
   justify-content: center;
   color: black;

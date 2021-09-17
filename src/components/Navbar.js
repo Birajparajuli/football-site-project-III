@@ -37,7 +37,9 @@ function Navbar() {
             <Heart />
           </div>
           <div className="icon">
-            <User />
+            <Link to="signup">
+              <User />
+            </Link>
           </div>
         </div>
       </div>
