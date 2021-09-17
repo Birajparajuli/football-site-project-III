@@ -1,6 +1,6 @@
 import React from "react";
-import "./Style/signIn.css";
-
+import "./signIn.css";
+import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 const SignIn = () => {
   return (
@@ -9,8 +9,10 @@ const SignIn = () => {
         <h3>Create an Account</h3>
         <div className="google-login">
           <button className="btn google-btn">
-            <FcGoogle size="1.5em" />
-            SIGN IN WITH GOOGLE
+            <div className="icon-btn">
+              <FcGoogle size="1.5em" />
+              <h3>SIGN IN WITH GOOGLE</h3>
+            </div>
           </button>
         </div>
         <div className="or-bar">
@@ -40,8 +42,11 @@ const SignIn = () => {
           <small>Error Message</small>
         </div>
         <button type="submit" className="btn signup-btn">
-          Submit
+          Sign In
         </button>
+        <h5>
+          Already have account? <Link>Log In</Link>
+        </h5>
       </form>
     </div>
   );

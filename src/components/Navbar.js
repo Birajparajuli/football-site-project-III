@@ -1,7 +1,8 @@
 import React from "react";
 import { ShoppingCart, User, Heart } from "react-feather";
 import { Link } from "react-router-dom";
-import "../css/components.css";
+
+import "./Style/navbar.css";
 
 import useFetch from "../hooks/useFetch";
 

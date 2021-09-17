@@ -1,7 +1,8 @@
 import React from "react";
 import { Heart, Share2 } from "react-feather";
-import "../css/components.css";
 import { Link } from "react-router-dom";
+
+import "./Style/singleProduct.css";
 
 const SingleProduct = ({ product }) => {
   return (

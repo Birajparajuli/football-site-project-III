@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
-import "./Style/productinfo.css";
+import "./productinfo.css";
 
 function ProductInfo() {
   const { id } = useParams();

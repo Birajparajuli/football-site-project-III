@@ -1,9 +1,9 @@
 import React from "react";
-import { CartItem } from "../components/CartItem";
+import { CartItem } from "../../components/CartItem";
 
 import { Lock } from "react-feather";
 
-import "./Style/cart.css";
+import "./cart.css";
 
 const Cart = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import useFetch from "../hooks/useFetch";
-import SingleProduct from "../components/SingleProduct";
+import useFetch from "../../hooks/useFetch";
+import SingleProduct from "../../components/SingleProduct";
 
 function Category() {
   const { id } = useParams();

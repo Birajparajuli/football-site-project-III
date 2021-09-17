@@ -1,12 +1,12 @@
 import React from "react";
 
 //Import Components
-import Hero from "../components/Hero";
-import ProductList from "../components/ProductList";
-import InfoBox from "../components/InfoBox";
-import Footer from "../components/Footer";
+import Hero from "../../components/Hero";
+import ProductList from "../../components/ProductList";
+import InfoBox from "../../components/InfoBox";
+import Footer from "../../components/Footer";
 
-import { SliderData } from "../data/SliderData";
+import { SliderData } from "../../data/SliderData";
 function Home() {
   return (
     <>

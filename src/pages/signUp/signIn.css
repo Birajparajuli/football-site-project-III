@@ -1,11 +1,12 @@
 .sign-in-container {
   display: grid;
   place-items: center;
-  height: 80vh;
+  height: 85vh;
+  background-color: tomato;
 }
 
 .sign-up-form {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
   min-width: 600px;
   display: grid;
   place-items: center;
@@ -53,9 +54,19 @@
   border-color: red;
 }
 
+.form-items small {
+  visibility: hidden;
+}
+.form-items label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
 .signup-btn {
   /* display: block; */
   width: 100%;
+  padding: 10px;
 }
 .google-login {
   width: 100%;
@@ -65,4 +76,10 @@
   border: 1px solid black;
   width: 100%;
   justify-content: center;
+  color: black;
+  padding: 10px;
+}
+
+form h5 {
+  padding-top: 15px;
 }

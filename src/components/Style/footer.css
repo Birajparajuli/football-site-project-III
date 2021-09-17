@@ -1,0 +1,75 @@
+/* Footer --Start */
+.footer-top {
+  display: flex;
+  padding: 2% 10%;
+  justify-content: space-between;
+  background-color: var(--color-1);
+}
+
+.footer-top p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.newsletter input {
+  padding: 12px;
+  border-radius: 6px;
+  background-image: url("../../img/mail.svg");
+  background-position: 5px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  margin: auto 10px;
+}
+
+.newsletter input:focus {
+  border: none;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-method img {
+  height: 40px;
+  margin: 10px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-icon {
+  margin: 10px;
+}
+
+/* Footer middle */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10%;
+}
+.footer-bottom ul {
+  list-style: none;
+}
+.footer-bottom a {
+  color: var(--color-1);
+}
+
+/* Footer copyright */
+.copyright {
+  background-color: var(--color-1);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+/* Footer --End */

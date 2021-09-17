@@ -1,0 +1,128 @@
+.heroWrapper {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: var(--color-4);
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px;
+  margin-right: 10px;
+  user-select: none;
+  transition: all 0.4s;
+}
+.arrow:hover {
+  background-color: var(--color-1);
+}
+.sliderButtons {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  z-index: 10;
+}
+
+.heroSlide {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.heroImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.heroSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.heroSlider::before {
+  content: "  ";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  bottom: 0vh;
+  left: 0;
+  overflow: hidden;
+  /* opacity: 0.4; */
+  /* background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 191, 0.103));
+   */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.596) 37%,
+    rgba(67, 49, 141, 0.137) 100%
+  );
+}
+.heroContent {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  color: #fff;
+  padding: 0 5%;
+  transition: 3000 ease;
+}
+
+.heroContent h1 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 0, 0, 0, 20px rgba(0, 0, 0, 0.4);
+  margin: 0 0 18px;
+}
+
+.heroContent p {
+  margin: 0 0 18px;
+  font-size: 1.5rem;
+}
+
+/* Btn Global */
+.btn {
+  font-size: 12px;
+  display: inline-block;
+  padding: 20px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 100%;
+  border: none;
+  outline: 0;
+  color: #fff;
+  background-color: var(--color-4);
+}
+
+/* Set width of the slider button */
+.btn-hero {
+  width: 25%;
+}
+.btn-hero:hover {
+  filter: drop-shadow(0 8px 24px rgba(33, 38, 46, 0.25));
+}
+/* Slider End */

@@ -9,3 +9,13 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: #d83f87;
+  --color-1: #2a1b3d;
+  --color-2: #44318d;
+  --color-3: #e98074;
+  --color-4: #ea400f;
+  --white: #a4b3b6;
+  --black: ;
+}

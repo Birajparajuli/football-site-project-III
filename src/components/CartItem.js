@@ -1,5 +1,6 @@
 import React from "react";
-import "../css/components.css";
+
+import "./Style/cartItem.css";
 import { Trash, PlusCircle, MinusCircle } from "react-feather";
 //temp img import
 import productImage from "../img/product/Messi_PSG.jpeg";

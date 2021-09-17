@@ -6,11 +6,11 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Import Pages
-import Home from "./pages/Home";
-import ProductInfo from "./pages/ProductInfo";
-import Category from "./pages/Category";
-import Cart from "./pages/Cart";
-import SignIn from "./pages/SignIn";
+import Home from "./pages/home/Home";
+import ProductInfo from "./pages/productInfo/ProductInfo";
+import Category from "./pages/category/Category";
+import Cart from "./pages/cart/Cart";
+import SignIn from "./pages/signUp/SignIn";
 
 function App() {
   return (

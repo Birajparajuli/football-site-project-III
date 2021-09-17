@@ -1,6 +1,7 @@
 import React from "react";
+
 import SingleProduct from "./SingleProduct";
-import "../css/components.css";
+import "./Style/productList.css";
 import useFetch from "../hooks/useFetch";
 
 function ProductList() {
