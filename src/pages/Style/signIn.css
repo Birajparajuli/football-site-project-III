@@ -1,14 +1,17 @@
 .sign-in-container {
-  display: flex;
-  padding: 20px 10%;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  height: 80vh;
 }
-.form-container {
-  width: 100%;
-}
-.sign-in-info {
-  width: 100%;
+
+.sign-up-form {
+  background-color: rgb(221, 221, 221);
+  min-width: 600px;
+  display: grid;
+  place-items: center;
+  padding: 30px 40px;
+  border-radius: 6px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .or-bar {
@@ -23,12 +26,18 @@
   align-items: center;
   margin: 10px;
 }
+.form-items {
+  margin-bottom: 10px;
+  /* padding-bottom: 20px; */
+  position: relative;
+  width: 100%;
+}
 
 .form-items input {
   border: 2px solid #cccbcb;
   border-radius: 4px;
   display: block;
-  width: 95%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -42,4 +51,18 @@
 }
 .form-items.error input {
   border-color: red;
+}
+
+.signup-btn {
+  /* display: block; */
+  width: 100%;
+}
+.google-login {
+  width: 100%;
+}
+.google-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 100%;
+  justify-content: center;
 }
