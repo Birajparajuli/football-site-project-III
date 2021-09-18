@@ -8,7 +8,15 @@ const SignIn = () => {
       <form className="sign-up-form">
         <h3 className="sign-title">Create an Account</h3>
         <div className="google-login">
-          <button className="btn google-btn">
+          <button
+            className="btn google-btn"
+            onClick={() =>
+              window.open(
+                "https://football-site-backend.herokuapp.com/connect/google",
+                "Sign up FootballHub"
+              )
+            }
+          >
             <div className="icon-btn">
               <FcGoogle size="1.5em" />
               <h3>SIGN IN WITH GOOGLE</h3>
