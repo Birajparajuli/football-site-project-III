@@ -13,13 +13,13 @@ const SignIn = () => {
             onClick={() =>
               window.open(
                 "https://football-site-backend.herokuapp.com/connect/google",
-                "Sign up FootballHub"
+                "Sign up to  FootballHub"
               )
             }
           >
             <div className="icon-btn">
               <FcGoogle size="1.5em" />
-              <h3>SIGN IN WITH GOOGLE</h3>
+              <h3>CONTINUE WITH GOOGLE</h3>
             </div>
           </button>
         </div>
