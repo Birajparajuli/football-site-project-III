@@ -11,7 +11,7 @@ const SignIn = () => {
           <button
             className="btn google-btn"
             onClick={() =>
-              window.open(
+              window.location(
                 "https://football-site-backend.herokuapp.com/connect/google",
                 "Sign up to  FootballHub"
               )
