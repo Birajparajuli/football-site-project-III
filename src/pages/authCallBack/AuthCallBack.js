@@ -25,8 +25,8 @@ const AuthCallBack = () => {
       {auth && (
         <>
           <div>Jwt: {auth.jwt}</div>
-          {/* <div>User Id: {auth.user.id}</div> */}
-          {/* <div>Provider: {auth.user.provider}</div> */}
+          <div>User Id: {auth.user.id}</div>
+          <div>Provider: {auth.user.provider}</div>
         </>
       )}
     </div>
