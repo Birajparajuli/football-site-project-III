@@ -27,3 +27,6 @@
   padding: 30px 10%;
   background-color: var(--color-3);
 }
+
+@media (max-width: 760px) {
+}
