@@ -1,5 +1,5 @@
 import React from "react";
-import { ShoppingCart, User, Heart } from "react-feather";
+import { ShoppingCart, User, Heart, Grid } from "react-feather";
 import { Link } from "react-router-dom";
 
 import "./Style/navbar.css";
@@ -19,7 +19,7 @@ function Navbar() {
     <div className="main-nav">
       <div className="top-nav">
         <div className="logo">
-          <Link className="logo-text" to="/">
+          <Link className="logo-text desktop-logo" to="/">
             FootballHub
           </Link>
         </div>
@@ -55,6 +55,28 @@ function Navbar() {
             </Link>
           ))}
         </ul>
+      </div>
+      <div className="float-nav">
+        <Link className="logo-text mobile-logo" to="/">
+          FH
+        </Link>
+        <div className="icon">
+          <Grid />
+        </div>
+        <div className="icon cart-icon">
+          <Link className="" to={`cart`}>
+            <ShoppingCart />
+            <span>2</span>
+          </Link>
+        </div>
+        <div className="icon">
+          <Heart />
+        </div>
+        <div className="icon">
+          <Link to="signup">
+            <User />
+          </Link>
+        </div>
       </div>
     </div>
   );

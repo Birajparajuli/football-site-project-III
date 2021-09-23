@@ -12,7 +12,6 @@ import Category from "./pages/category/Category";
 import Cart from "./pages/cart/Cart";
 import SignIn from "./pages/signUp/SignIn";
 import LogIn from "./pages/logIn/LogIn";
-import AuthCallBack from "./pages/authCallBack/AuthCallBack";
 
 function App() {
   return (
@@ -36,9 +35,6 @@ function App() {
         </Route>
         <Route path="/login">
           <LogIn />
-        </Route>
-        <Route path="/auth/google/callback">
-          <AuthCallBack />
         </Route>
       </Switch>
     </Router>

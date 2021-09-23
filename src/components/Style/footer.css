@@ -1,6 +1,7 @@
 /* Footer --Start */
 .footer-top {
   display: flex;
+  flex-wrap: wrap;
   padding: 2% 10%;
   justify-content: space-between;
   background-color: var(--color-1);
@@ -13,6 +14,7 @@
 }
 .newsletter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 4px;
@@ -55,6 +57,7 @@
 /* Footer middle */
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 2% 10%;
 }
