@@ -20,6 +20,7 @@
 .bottom-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   align-items: center;
 }
@@ -40,4 +41,9 @@
   width: 20px;
 }
 
+@media (max-width: 760px) {
+  .item-image img {
+    height: 100px;
+  }
+}
 /* Cart Item CSS End */
