@@ -4,7 +4,7 @@
   height: 300px;
   width: 250px;
   border-radius: 6px 6px 0 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   /* margin-bottom: 0.8rem; */
 }

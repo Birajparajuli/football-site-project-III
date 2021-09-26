@@ -1,20 +1,21 @@
 /* InfoBox --Start  */
+.info-box-container {
+  padding: 10px;
+}
 .info-box {
-  min-height: 50vh;
-  background-image: linear-gradient(#321a92ad, #1d063bd0),
-    url("../../img/world.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #6555df;
   display: flex;
   flex-wrap: wrap;
   padding: 3% 10%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 6px;
+  min-height: 40vh;
 }
 
 .info-left {
   text-align: center;
-  padding-right: 40px;
+  /* padding-right: 40px; */
 }
 
 .info-left h3 {
@@ -22,15 +23,14 @@
   color: #ffff;
 }
 
-.info-left h2 {
-  font-size: 100px;
-  color: #fff;
-  font-weight: 600;
+.info-left img {
+  height: 400px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
 }
 
 .info-right {
-  color: #fff;
-  padding-left: 40px;
+  color: #322a3c;
+  /* padding-left: 40px; */
 }
 
 .info-right h2,

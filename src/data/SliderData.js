@@ -30,7 +30,7 @@ export const SliderData = [
     label: "Learn More",
   },
   {
-    title: "Halland Jersey BVB",
+    title: "Haaland Jersey BVB",
     price: "Rs. 4525",
     path: "/homes",
     image: image4,
