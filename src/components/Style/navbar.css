@@ -74,7 +74,7 @@ input::placeholder {
 /* Bottom Nav */
 
 .bottom-nav {
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   margin-top: 10px;
   /* padding: 5px; */
 }
@@ -93,7 +93,7 @@ input::placeholder {
 }
 
 .nav-link:hover {
-  background-color: var(--color-4);
+  background-color: var(--color-1);
   transition: border 0.1s ease-in 0.1s;
 }
 

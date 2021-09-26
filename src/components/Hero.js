@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { ArrowRightCircle, ArrowLeftCircle } from "react-feather";
+import { ArrowRight, ArrowLeft } from "react-feather";
 
 import "./Style/hero.css";
 const Hero = ({ slides }) => {
@@ -45,15 +45,12 @@ const Hero = ({ slides }) => {
             <div key={index} className="heroSlide">
               {index === current && (
                 <div className="heroSlider">
-                  <div className="heroImage">
-                    <img src={slide.image} alt={slide.alt} />
-                  </div>
                   <div className="heroContent">
                     <h1>{slide.title}</h1>
-                    <p>{slide.price}</p>
-                    <button className="btn btn-hero" to={slide.path}>
-                      {slide.label}
-                    </button>
+                    <p>For {slide.price}</p>
+                  </div>
+                  <div className="heroImage">
+                    <img src={slide.image} alt={slide.alt} />
                   </div>
                 </div>
               )}
@@ -62,10 +59,10 @@ const Hero = ({ slides }) => {
         })}
         <div className="sliderButtons">
           <div className="prevArrow " onClick={prevSlide}>
-            <ArrowLeftCircle className="arrow" />
+            <ArrowLeft className="arrow" />
           </div>
           <div className="nextArrow" onClick={nextSlide}>
-            <ArrowRightCircle className="arrow" />
+            <ArrowRight className="arrow" />
           </div>
         </div>
       </div>
