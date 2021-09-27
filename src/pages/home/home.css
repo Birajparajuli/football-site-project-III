@@ -1,0 +1,8 @@
+.product-list-container {
+  padding: 10px;
+}
+.product-list-with-title {
+  background-color: #ffff;
+  border-radius: 6px;
+  padding: 20px 0;
+}

@@ -1,0 +1,45 @@
+.newsletter-container {
+  padding: 10px;
+}
+.newsletter-content {
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50vh;
+
+  background-color: #6555df;
+}
+
+.newsletter-left img {
+  height: 200px;
+}
+
+.newsletter-input-btn {
+  position: relative;
+  display: block;
+  /* background-color: red; */
+}
+.newsletter-input-btn input {
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+}
+
+.newsletter-input-btn button {
+  position: absolute;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  right: 0;
+  background-color: var(--color-2);
+  color: #fff;
+  font-family: inherit;
+}
+
+.newsletter-btn:hover {
+  background-color: var(--color-1);
+  color: var(--color-2);
+}

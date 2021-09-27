@@ -147,6 +147,9 @@
 /* Media Queries */
 @media (max-width: 760px) {
   .heroContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .heroSlider {
