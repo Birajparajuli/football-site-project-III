@@ -1,0 +1,28 @@
+.categories-container {
+  padding: 10px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+.category {
+  color: var(--color-2);
+  background-color: #fff;
+  text-decoration: none;
+  padding: 25px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.category img {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+  .categories {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

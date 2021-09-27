@@ -18,3 +18,22 @@ body {
   --color-3: #007f0d;
   --white: #a4b3b6;
 }
+
+/* Btn Global */
+.btn {
+  font-size: 12px;
+  display: inline-block;
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 100%;
+  border: none;
+  outline: 0;
+  color: #fff;
+  background-color: var(--color-2);
+}

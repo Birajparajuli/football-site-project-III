@@ -26,25 +26,6 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="footer-middle">
-        <div className="link-group">
-          <Link>MEN</Link>
-          <Link>WOMEN</Link>
-          <Link>BOOTS</Link>
-          <Link>JERSEYS</Link>
-        </div>
-        <div className="contact-us">
-          <h3>Contact Us</h3>
-          <p>Madhyapur Thimi 07, Gathhaghar</p>
-          <p>Call Us Now: 01-322323232 Email: info@footballhub.com</p>
-        </div>
-      </div>
-      <div className="footer-right">
-        <div className="email-form">
-          <input type="email" />
-          <button className="btn">Subscribe</button>
-        </div>
-      </div>
     </div>
   );
 }

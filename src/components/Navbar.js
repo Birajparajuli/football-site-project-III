@@ -4,17 +4,14 @@ import { Link } from "react-router-dom";
 
 import "./Style/navbar.css";
 
-import useFetch from "../hooks/useFetch";
-
 function Navbar() {
-  const { loading, error, data } = useFetch(
-    "https://football-site-backend.herokuapp.com/categories/"
-  );
+  // const { loading, error, data } = useFetch(
+  //   "https://football-site-backend.herokuapp.com/categories/"
+  // );
 
-  if (loading) return <p>Loading data from Server</p>;
-  if (error) return <p>Problem Loading data !!!!</p>;
+  // if (loading) return <p>Loading data from Server</p>;
+  // if (error) return <p>Problem Loading data !!!!</p>;
 
-  console.log(data);
   return (
     <div className="main-nav">
       <div className="top-nav">
@@ -25,10 +22,11 @@ function Navbar() {
         </div>
         <div className="search">
           <input type="text" placeholder={"Search products......"} />
+          <button className="search-button">Search</button>
         </div>
         <div className="icons">
           <div className="icon cart-icon">
-            <Link className="" to={`cart`}>
+            <Link className="link" to={`cart`}>
               <ShoppingCart />
               <span>2</span>
             </Link>
@@ -37,13 +35,14 @@ function Navbar() {
             <Heart />
           </div>
           <div className="icon">
-            <Link to="signup">
+            <Link className="link" to="signup">
               <User />
             </Link>
           </div>
         </div>
       </div>
-      <div className="bottom-nav">
+
+      {/* <div className="bottom-nav">
         <ul className="nav-links">
           {data.map((category) => (
             <Link
@@ -56,6 +55,7 @@ function Navbar() {
           ))}
         </ul>
       </div>
+       */}
       <div className="float-nav">
         <Link className="logo-text mobile-logo" to="/">
           FH

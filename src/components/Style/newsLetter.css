@@ -22,23 +22,28 @@
   /* background-color: red; */
 }
 .newsletter-input-btn input {
+  background-image: url(../../img/mail.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 6px;
   width: 100%;
   border: none;
+  padding-right: 20px;
+  padding-left: 40px;
 }
 
 .newsletter-input-btn button {
   position: absolute;
   border: none;
   padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 0px 6px 6px 0px;
   right: 0;
   background-color: var(--color-2);
   color: #fff;
   font-family: inherit;
+  transition: 1s ease-in;
 }
-
 .newsletter-btn:hover {
   background-color: var(--color-1);
   color: var(--color-2);

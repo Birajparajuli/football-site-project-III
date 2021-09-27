@@ -48,6 +48,7 @@ const Hero = ({ slides }) => {
                   <div className="heroContent">
                     <h1>{slide.title}</h1>
                     <p>For {slide.price}</p>
+                    <button className="btn btn-hero">Buy Now</button>
                   </div>
                   <div className="heroImage">
                     <img src={slide.image} alt={slide.alt} />

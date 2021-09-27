@@ -117,25 +117,6 @@
   font-size: 1.5rem;
 }
 
-/* Btn Global */
-.btn {
-  font-size: 12px;
-  display: inline-block;
-  padding: 20px 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: 0.1em;
-  border-radius: 5px;
-  box-sizing: border-box;
-  line-height: 100%;
-  border: none;
-  outline: 0;
-  color: #fff;
-  background-color: var(--color-4);
-}
-
 /* Set width of the slider button */
 .btn-hero {
   width: 25%;
@@ -148,8 +129,11 @@
 @media (max-width: 760px) {
   .heroContent {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
+  }
+  .btn-hero {
+    background-color: var(--color-1);
   }
 
   .heroSlider {

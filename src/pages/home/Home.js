@@ -10,12 +10,13 @@ import { SliderData } from "../../data/SliderData";
 import NewsLetter from "../../components/NewsLetter";
 
 import "./home.css";
+import Categories from "../../components/Categories";
 
 function Home() {
   return (
     <>
       <Hero slides={SliderData} />
-
+      <Categories />
       <div className="product-list-container">
         <div className="product-list-with-title">
           <h2 className="list-header">Trending Products</h2>
