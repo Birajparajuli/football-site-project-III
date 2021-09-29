@@ -10,13 +10,13 @@ function InfoBox() {
           <img src={truck} alt="truck" />
         </div>
         <div className="info-right">
-          <h3>Free Shipping*</h3>
-          <h2>Hassle Free</h2>
-          <p>
-            You don’t need to get into hassle of visiting different shops for
-            the best deal. <br /> You chose your product we deliver them.
-          </p>
-          <p>
+          <h4>Free Shipping*</h4>
+
+          <h3>
+            You don’t need to get into hassle of <br /> visiting different shops
+            for the best deal. <br /> You chose your product we deliver them.
+          </h3>
+          <p className="small-txt-info">
             * Free Shipping Inside KTM Valley Only, cost for Shipping Outside
             Valley <br /> will be informed to the concerned customer.{" "}
           </p>

@@ -11,8 +11,11 @@ const NewsLetter = () => {
           <img src={newsletter} alt="news-letter" />
         </div>
         <div className="newsletter-right">
-          <h3>Get deals right in your inbox.</h3>
-          <p>Get letest products and offers.</p>
+          <h3>
+            Sign Up to receive exclusive promotions, <br />
+            coupons, and the latest events
+          </h3>
+
           <div className="newsletter-input-btn">
             <input type="email" name="email" placeholder={"Enter your email"} />
             <button className="newsletter-btn">Submit</button>

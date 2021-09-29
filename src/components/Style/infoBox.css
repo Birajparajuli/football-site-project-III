@@ -13,14 +13,23 @@
   min-height: 40vh;
 }
 
-.info-left {
-  text-align: center;
-  /* padding-right: 40px; */
+.info-box p {
+  color: #fff;
 }
 
-.info-left h3 {
+.info-box h3 {
+  text-transform: none;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  color: #fff;
+}
+.info-box h4 {
   text-transform: uppercase;
-  color: #ffff;
+  color: #fff;
+}
+.small-txt-info {
+  font-size: 10px;
+  margin-top: 20px;
 }
 
 .info-left img {
@@ -33,27 +42,16 @@
   /* padding-left: 40px; */
 }
 
-.info-right h2,
-h3 {
-  text-transform: uppercase;
-}
-.info-right h2 {
-  font-size: 40px;
-}
-.info-right h3 {
-  font-size: 16px;
-  font-weight: normal;
-}
 .info-right button {
-  background-color: var(--color-4);
+  background-color: var(--color-2);
   color: #fff;
   margin-top: 20px;
   transition: all 0.2s ease-in-out;
 }
 
 .info-right button:hover {
-  background-color: #fff;
-  color: var(--color-4);
+  background-color: var(--color-1);
+  color: var(--color-2);
 }
 
 /* .btn {

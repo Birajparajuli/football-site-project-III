@@ -2,23 +2,33 @@
   padding: 10px;
 }
 .newsletter-content {
+  /* padding: 0 2%; */
   border-radius: 6px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  min-height: 50vh;
-
+  min-height: 40vh;
   background-color: #6555df;
+}
+.newsletter-right h3 {
+  text-transform: none;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  color: #fff;
 }
 
 .newsletter-left img {
   height: 200px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
 }
 
 .newsletter-input-btn {
   position: relative;
   display: block;
+  margin: 20px 0;
+  width: 70%;
+
   /* background-color: red; */
 }
 .newsletter-input-btn input {

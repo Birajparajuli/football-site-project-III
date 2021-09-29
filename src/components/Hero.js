@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { ArrowRight, ArrowLeft } from "react-feather";
+import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 
 import "./Style/hero.css";
 const Hero = ({ slides }) => {
@@ -60,10 +60,10 @@ const Hero = ({ slides }) => {
         })}
         <div className="sliderButtons">
           <div className="prevArrow " onClick={prevSlide}>
-            <ArrowLeft className="arrow" />
+            <RiArrowDropLeftLine className="arrow" />
           </div>
           <div className="nextArrow" onClick={nextSlide}>
-            <ArrowRight className="arrow" />
+            <RiArrowDropRightLine className="arrow" />
           </div>
         </div>
       </div>
