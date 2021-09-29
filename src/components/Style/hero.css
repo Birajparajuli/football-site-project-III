@@ -27,7 +27,7 @@
   transition: all 0.4s;
 }
 .arrow:hover {
-  background-color: var(--color-3);
+  background-color: var(--color-1);
 }
 .sliderButtons {
   display: flex;

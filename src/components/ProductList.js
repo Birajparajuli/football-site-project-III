@@ -14,12 +14,14 @@ function ProductList() {
   console.log(data);
 
   return (
-    <div className="product-list">
-      {data.map((product) => (
-        <div key={product.id}>
-          <SingleProduct product={product} />
-        </div>
-      ))}
+    <div className="product-list-container">
+      <div className="product-list">
+        {data.map((product) => (
+          <div key={product.id}>
+            <SingleProduct product={product} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,100 @@
+.top-footer {
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  color: var(--color-1);
+}
+.footer-left p {
+  margin: 10px auto;
+  color: #434549;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.social-icon {
+  height: 25px;
+  width: 25px;
+  color: #fff;
+}
+.fb-icon:hover {
+  background-color: #4267b2;
+}
+.insta-icon:hover {
+  background-color: #fb3958;
+}
+.twitter-icon:hover {
+  background-color: #00acee;
+}
+.linkedin-icon:hover {
+  background-color: #0077b5;
+}
+
+.social-icons a {
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-content: center;
+  background-color: var(--color-2);
+  border-radius: 50%;
+  transition: 0.5s ease-in;
+}
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-list h4 {
+  color: var(--color-2);
+  margin: 0 0 10px 0;
+  letter-spacing: 0.05em;
+}
+
+.footer-link {
+  color: #434549;
+  text-decoration: none;
+  margin: 5px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-link:after {
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #434549;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.footer-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.bottom-footer {
+  background-color: var(--color-2);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+.payment-icon {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+}

@@ -1,7 +1,7 @@
 /* Product List-- Start */
 .product-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 10%;
   align-items: center;
