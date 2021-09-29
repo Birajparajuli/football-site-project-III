@@ -37,3 +37,6 @@ body {
   color: #fff;
   background-color: var(--color-2);
 }
+
+.btn:hover {
+}
