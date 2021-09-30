@@ -37,13 +37,19 @@
   padding: 10px;
 }
 
+.delete-icon {
+  color: rgb(196, 65, 65);
+}
+
 .lock-icon {
   width: 20px;
 }
 
 @media (max-width: 760px) {
-  .item-image img {
-    height: 100px;
+  .cart-item {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* Cart Item CSS End */
