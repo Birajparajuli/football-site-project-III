@@ -3,6 +3,7 @@
   justify-content: space-around;
 
   flex-wrap: wrap;
+
   margin: 20px auto;
   padding: 20px 0;
 }
@@ -52,6 +53,8 @@
 .link-list {
   display: flex;
   flex-direction: column;
+
+  margin: 10px;
 }
 
 .link-list h4 {
@@ -65,7 +68,6 @@
   text-decoration: none;
   margin: 5px 0;
   position: relative;
-  display: inline-block;
 }
 
 .footer-link:after {

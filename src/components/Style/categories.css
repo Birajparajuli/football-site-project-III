@@ -21,7 +21,7 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 896px) {
   .categories {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }

@@ -4,13 +4,12 @@ import { CartItem } from "../../components/CartItem";
 import { Lock } from "react-feather";
 
 import "./cart.css";
+import PageHeader from "../../components/PageHeader";
 
 const Cart = () => {
   return (
     <div>
-      <div className="header">
-        <h2>YOUR CART</h2>
-      </div>
+      <PageHeader header={"Cart"} />
       <div className="cart-list">
         <CartItem />
         <CartItem />
