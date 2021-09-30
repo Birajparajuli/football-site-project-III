@@ -51,16 +51,4 @@
   transition: all 0.2s ease-in-out;
 }
 
-.info-right button:hover {
-  background-color: var(--color-1);
-  color: var(--color-2);
-}
-
-/* .btn {
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  } */
 /* InfoBox --End  */

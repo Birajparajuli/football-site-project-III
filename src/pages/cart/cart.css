@@ -25,8 +25,14 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 10%;
-  background-color: var(--color-3);
+  background-color: var(--color-1);
 }
 
 @media (max-width: 760px) {
+  .cart-list {
+    padding: 20px 1%;
+  }
+  .pay-now {
+    margin-bottom: 40px;
+  }
 }

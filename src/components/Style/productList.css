@@ -1,10 +1,14 @@
 /* Product List-- Start */
 .product-list {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 10%;
-  align-items: center;
+
+  align-items: center; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
 
   /* margin: 40px auto; */
 }

@@ -39,4 +39,6 @@ body {
 }
 
 .btn:hover {
+  background-color: var(--color-1);
+  color: var(--color-2);
 }

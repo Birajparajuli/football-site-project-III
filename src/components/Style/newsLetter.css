@@ -26,9 +26,8 @@
 
 .newsletter-input-btn {
   position: relative;
-  display: block;
+  display: flex;
   margin: 20px 0;
-  width: 70%;
 
   /* background-color: red; */
 }
@@ -58,4 +57,13 @@
 .newsletter-btn:hover {
   background-color: var(--color-1);
   color: var(--color-2);
+}
+
+@media (max-width: 760px) {
+  .newsletter-content {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
