@@ -24,10 +24,11 @@ function ProductInfo() {
           <h2 className="product-title">{data.name}</h2>
           <p className="product-description">{data.description}</p>
           <h3 className="product-price">Rs.{data.price}</h3>
+          <div className="product-size"></div>
           <div className="product-amount">
-            <FiMinusCircle />
+            <FiMinusCircle className=" icon-minus" />
             <p className="amount-counter">3</p>
-            <FiPlusCircle />
+            <FiPlusCircle className=" icon-plus" />
           </div>
           <button className="btn">ADD TO CART</button>
         </div>

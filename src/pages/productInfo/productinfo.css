@@ -67,3 +67,11 @@
 .amount-counter {
   padding: 0 10px;
 }
+
+.icon-minus,
+.icon-plus {
+  color: var(--color-2);
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
