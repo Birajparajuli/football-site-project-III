@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 
 import "./productinfo.css";
+import { FiPlusCircle, FiMinusCircle } from "react-icons/fi";
 
 function ProductInfo() {
   const { id } = useParams();
@@ -14,8 +15,6 @@ function ProductInfo() {
   if (error) return <p>Problem Loading data !!!!</p>;
   return (
     <>
-      <h1>Details Page-{id}</h1>
-
       <div className="info-container">
         <div className="left-container">
           <img src={data.image.url} alt={data.name} />
@@ -26,9 +25,9 @@ function ProductInfo() {
           <p className="product-description">{data.description}</p>
           <h3 className="product-price">Rs.{data.price}</h3>
           <div className="product-amount">
-            <button className="btn amount-btn">-</button>
+            <FiMinusCircle />
             <p className="amount-counter">3</p>
-            <button className="btn amount-btn">+</button>
+            <FiPlusCircle />
           </div>
           <button className="btn">ADD TO CART</button>
         </div>
