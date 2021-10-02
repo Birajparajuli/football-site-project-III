@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import useFetch from "../../hooks/useFetch";
 import SingleProduct from "../../components/SingleProduct";
+import PageHeader from "../../components/PageHeader";
 
 function Category() {
   const { id } = useParams();
@@ -14,12 +15,14 @@ function Category() {
   if (error) return <p>Problem Loading data !!!!</p>;
   return (
     <>
-      <h1>Category Page-{id}</h1>
-      {data.products.map((product) => (
-        <div key={product.id}>
-          <SingleProduct product={product} />
-        </div>
-      ))}
+      <PageHeader header={data.name} />
+      <div className="product-list">
+        {data.products.map((product) => (
+          <div key={product.id}>
+            <SingleProduct product={product} />
+          </div>
+        ))}
+      </div>
     </>
   );
 }
