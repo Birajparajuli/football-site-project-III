@@ -17,6 +17,7 @@ function Home() {
     <>
       <Hero slides={SliderData} />
       <Categories />
+
       <div className="product-list-container">
         <div className="product-list-with-title">
           <h2 className="list-header">Trending Products</h2>

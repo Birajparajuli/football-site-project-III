@@ -3,13 +3,14 @@ import React from "react";
 import SingleProduct from "./SingleProduct";
 import "./Style/productList.css";
 import useFetch from "../hooks/useFetch";
+import SkeletonProduct from "./skeletons/SkeletonProduct";
 
 function ProductList() {
   const { loading, error, data } = useFetch(
     "https://football-site-backend.herokuapp.com/products"
   );
 
-  if (loading) return <p>Loading data from Server</p>;
+  if (loading) return <SkeletonProduct />;
   if (error) return <p>Problem Loading data !!!!</p>;
   console.log(data);
 
