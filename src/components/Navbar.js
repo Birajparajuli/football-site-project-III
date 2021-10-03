@@ -16,7 +16,7 @@ function Navbar() {
     <div className="main-nav">
       <div className="top-nav">
         <div className="logo">
-          <Link className="logo-text desktop-logo" to="/">
+          <Link className="logo-text desktop-logo" to="/" exact>
             FootballHub
           </Link>
         </div>
@@ -26,7 +26,7 @@ function Navbar() {
         </div>
         <div className="icons">
           <div className="icon cart-icon">
-            <Link className="link" to={`cart`}>
+            <Link className="link" to={`cart`} exact>
               <ShoppingCart />
               <span>2</span>
             </Link>

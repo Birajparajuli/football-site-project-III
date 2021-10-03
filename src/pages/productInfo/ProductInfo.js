@@ -3,7 +3,14 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 
 import "./productinfo.css";
-import { FiPlusCircle, FiMinusCircle } from "react-icons/fi";
+import PlatformFeature from "../../components/PlatformFeature";
+import {
+  FiPlusCircle,
+  FiMinusCircle,
+  FiShoppingCart,
+  FiZap,
+  FiStar,
+} from "react-icons/fi";
 
 function ProductInfo() {
   const { id } = useParams();
@@ -22,15 +29,39 @@ function ProductInfo() {
 
         <div className="right-container">
           <h2 className="product-title">{data.name}</h2>
+          <div className="star-ratings-reviews">
+            <div className="star">
+              <FiStar className="star-icon active-star" />
+              <FiStar className="star-icon active-star" />
+              <FiStar className="star-icon active-star" />
+              <FiStar className="star-icon active-star" />
+              <FiStar className="star-icon " />
+            </div>
+            <p>4,554 Rating 207 Reviews</p>
+          </div>
           <p className="product-description">{data.description}</p>
           <h3 className="product-price">Rs.{data.price}</h3>
           <div className="product-size"></div>
           <div className="product-amount">
             <FiMinusCircle className=" icon-minus" />
-            <p className="amount-counter">3</p>
+            <p className="amount-counter">1</p>
             <FiPlusCircle className=" icon-plus" />
           </div>
-          <button className="btn">ADD TO CART</button>
+          <PlatformFeature />
+          <div className="cart-buttons">
+            <button className="btn add-btn">
+              <div className="icon-btn">
+                <FiShoppingCart className="add-cart-icon" />
+                <h3> ADD TO CART</h3>
+              </div>
+            </button>
+            <button className="btn buy-btn">
+              <div className="icon-btn">
+                <FiZap className="add-cart-icon" />
+                <h3> BUY NOW</h3>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </>
