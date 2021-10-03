@@ -26,7 +26,7 @@ function Navbar() {
         </div>
         <div className="icons">
           <div className="icon cart-icon">
-            <Link className="link" to={`cart`} exact>
+            <Link className="link" to="/cart" exact>
               <ShoppingCart />
               <span>2</span>
             </Link>
@@ -35,7 +35,7 @@ function Navbar() {
             <Heart />
           </div>
           <div className="icon">
-            <Link className="link" to="signup">
+            <Link className="link" to="/signup" exact>
               <User />
             </Link>
           </div>
