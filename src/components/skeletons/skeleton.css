@@ -11,6 +11,15 @@
   width: 250px;
 }
 
+.skeleton.header-box {
+  height: 20vh;
+  width: 100%;
+}
+
+.skeleton.title {
+  height: 10px;
+  width: 30px;
+}
 /*  Skeleton product*/
 .skeleton-product-list {
   display: flex;
@@ -22,6 +31,11 @@
   position: relative;
 }
 
+/* skeleton-categories */
+.skeleton-categories {
+  padding: 10px;
+  position: relative;
+}
 /* Shimmer animation */
 .shimmer-wrapper {
   position: absolute;
@@ -29,7 +43,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  animation: loading 2.5s infinite;
+  animation: loading 2s infinite;
   overflow: hidden;
 }
 
@@ -38,6 +52,7 @@
   height: 100%;
   background: rgba(255, 255, 255, 0.4);
   transform: skewX(-20deg);
+  box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.3);
 }
 
 @keyframes loading {
