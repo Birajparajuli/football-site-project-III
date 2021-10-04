@@ -14,6 +14,10 @@
 .error-page-content h1 {
   font-size: 8em;
   margin: 20px;
+
+  background: -webkit-linear-gradient(#333, var(--color-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .error-page-content h2 {
