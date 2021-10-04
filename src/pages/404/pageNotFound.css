@@ -1,0 +1,21 @@
+.error-page-container {
+  display: grid;
+  place-content: center;
+  height: 90vh;
+}
+
+.error-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page-content h1 {
+  font-size: 8em;
+  margin: 20px;
+}
+
+.error-page-content h2 {
+  margin: 20px;
+}

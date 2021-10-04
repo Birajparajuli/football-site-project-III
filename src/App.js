@@ -12,6 +12,7 @@ import Category from "./pages/category/Category";
 import Cart from "./pages/cart/Cart";
 import SignIn from "./pages/signUp/SignIn";
 import LogIn from "./pages/logIn/LogIn";
+import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   return (
@@ -21,20 +22,24 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/details/:id">
+        <Route exact path="/details/:id">
           <ProductInfo />
         </Route>
-        <Route path="/categories/:id">
+        <Route exact path="/categories/:id">
           <Category />
         </Route>
-        <Route path="/cart">
+        <Route exact path="/cart">
           <Cart />
         </Route>
-        <Route path="/signup">
+        <Route exact path="/signup">
           <SignIn />
         </Route>
-        <Route path="/login">
+        <Route exact path="/login">
           <LogIn />
+        </Route>
+
+        <Route path="*">
+          <PageNotFound />
         </Route>
       </Switch>
     </Router>
