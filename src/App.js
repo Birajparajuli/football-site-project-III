@@ -37,6 +37,14 @@ function App() {
         <Route exact path="/login">
           <LogIn />
         </Route>
+        <Route
+          path="/admin"
+          component={() => {
+            window.location.href =
+              "https://football-site-backend.herokuapp.com/admin/";
+            return null;
+          }}
+        />
 
         <Route path="*">
           <PageNotFound />

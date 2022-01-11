@@ -22,8 +22,11 @@ const SingleProduct = ({ product }) => {
       <div className="product-info">
         <div className="info">
           <div className="cat-cards">
-            <span className="category-card cat-primary">Men</span>
-            <span className="category-card cat-secondary">New</span>
+            {product.categories.map((category) => (
+              <span key={category.map} className="category-card cat-secondary">
+                {category.name}
+              </span>
+            ))}
           </div>
           <Link className="link" to={`/details/${product.id}`}>
             <h5>{product.name}</h5>
