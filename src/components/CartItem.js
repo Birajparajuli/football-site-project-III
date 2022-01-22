@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import CartContext from "../context/cart/CartContext";
 
 import "./Style/cartItem.css";
-import { Trash, PlusCircle, MinusCircle } from "react-feather";
+import { Trash } from "react-feather";
 //temp img import
 
 export const CartItem = ({ item }) => {
