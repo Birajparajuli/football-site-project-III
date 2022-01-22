@@ -1,23 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import { CartItem } from "../../components/CartItem";
-
+import CartContext from "../../context/cart/CartContext";
 import { Lock } from "react-feather";
 
 import "./cart.css";
 import PageHeader from "../../components/PageHeader";
 
 const Cart = () => {
+  const { cartItems } = useContext(CartContext);
+
   return (
     <div>
       <PageHeader header={"Cart"} />
-      <div className="cart-list">
-        <CartItem />
-        <CartItem />
+      <div className="cart-wrapper">
+        {cartItems.length === 0 ? (
+          <h4>Cart is empty</h4>
+        ) : (
+          <div className="cart-list">
+            {cartItems.map((item) => (
+              <CartItem key={item.id} item={item} />
+            ))}
+          </div>
+        )}
       </div>
       <div className="cart-total-pay">
         <div className="subtotal">
           <h3>Subtotal</h3>
-          <h3>Rs.10,590</h3>
+          <h3>
+            Rs.{cartItems.reduce((amount, item) => item.price + amount, 0)}
+          </h3>
         </div>
         <div className="pay-now">
           <button className="btn ckeckout-btn">

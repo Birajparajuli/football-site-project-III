@@ -1,9 +1,13 @@
 import React from "react";
+
+//import css
 import "./css/App.css";
 
-import Navbar from "./components/Navbar";
-
+//react Router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//Import component
+import Navbar from "./components/Navbar";
 
 //Import Pages
 import Home from "./pages/home/Home";
@@ -13,6 +17,7 @@ import Cart from "./pages/cart/Cart";
 import SignIn from "./pages/signUp/SignIn";
 import LogIn from "./pages/logIn/LogIn";
 import PageNotFound from "./pages/404/PageNotFound";
+import CheckOut from "./pages/checkout/CheckOut";
 
 function App() {
   return (
@@ -36,6 +41,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <LogIn />
+        </Route>
+        <Route exact path="/checkout">
+          <CheckOut />
         </Route>
         <Route
           path="/admin"

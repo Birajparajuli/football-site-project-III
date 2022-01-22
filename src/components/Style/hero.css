@@ -121,6 +121,7 @@
 /* Set width of the slider button */
 .btn-hero {
   width: 25%;
+  text-decoration: none;
 }
 .btn-hero:hover {
   filter: drop-shadow(0 8px 24px rgba(33, 38, 46, 0.25));

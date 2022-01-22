@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
+import CartContext from "../../context/cart/CartContext";
 
 import "./productinfo.css";
 import PlatformFeature from "../../components/PlatformFeature";
@@ -13,6 +14,7 @@ import {
 } from "react-icons/fi";
 
 function ProductInfo() {
+  const { addToCart } = useContext(CartContext);
   const { id } = useParams();
   const { loading, error, data } = useFetch(
     "https://football-site-backend.herokuapp.com/products/" + id
@@ -20,6 +22,7 @@ function ProductInfo() {
 
   if (loading) return <p>Loading data from Server</p>;
   if (error) return <p>Problem Loading data !!!!</p>;
+
   return (
     <>
       <div className="info-container">
@@ -49,7 +52,7 @@ function ProductInfo() {
           </div>
           <PlatformFeature />
           <div className="cart-buttons">
-            <button className="btn add-btn">
+            <button className="btn add-btn" onClick={() => addToCart(data)}>
               <div className="icon-btn">
                 <FiShoppingCart className="add-cart-icon" />
                 <h3> ADD TO CART</h3>

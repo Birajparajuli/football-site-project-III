@@ -8,7 +8,7 @@ export const SliderData = [
   {
     title: "Messi jersey PSG",
     price: "Rs. 5999",
-    path: "/homes",
+    path: "details/6135abd00c5cea2e3c1b5e16",
     image: image1,
     alt: "Messi Jersey",
     label: "View Product",
@@ -16,7 +16,7 @@ export const SliderData = [
   {
     title: "Ronaldo Jersey MU",
     price: "Rs. 4999",
-    path: "/homes",
+    path: "/details/6135ac280c5cea2e3c1b5e19",
     image: image2,
     alt: "Ronaldo Jersey",
     label: "View Product",

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../context/cart/CartContext";
 import { ShoppingCart, User, Heart, Grid } from "react-feather";
 import { Link } from "react-router-dom";
 
@@ -11,6 +12,8 @@ function Navbar() {
 
   // if (loading) return <p>Loading data from Server</p>;
   // if (error) return <p>Problem Loading data !!!!</p>;
+
+  const { cartItems } = useContext(CartContext);
 
   return (
     <div className="main-nav">
@@ -28,7 +31,7 @@ function Navbar() {
           <div className="icon cart-icon">
             <Link className="link" to="/cart" exact>
               <ShoppingCart />
-              <span>2</span>
+              {cartItems.length > 0 && <span>{cartItems.length}</span>}
             </Link>
           </div>
           <div className="icon">

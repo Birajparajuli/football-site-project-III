@@ -112,3 +112,9 @@
 .star-ratings-reviews p {
   color: var(--color-2);
 }
+
+@media (max-width: 10px) {
+  .info-container {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}

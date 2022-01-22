@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 import "./Style/hero.css";
 const Hero = ({ slides }) => {
@@ -48,7 +49,9 @@ const Hero = ({ slides }) => {
                   <div className="heroContent">
                     <h1>{slide.title}</h1>
                     <p>For {slide.price}</p>
-                    <button className="btn btn-hero">Buy Now</button>
+                    <Link className="btn btn-hero" to={slide.path}>
+                      Buy Now
+                    </Link>
                   </div>
                   <div className="heroImage">
                     <img src={slide.image} alt={slide.alt} />

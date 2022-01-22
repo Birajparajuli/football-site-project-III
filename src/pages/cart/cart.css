@@ -25,7 +25,8 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 10%;
-  background-color: var(--color-1);
+  background-color: var(--color-2);
+  color: #fff;
 }
 
 @media (max-width: 760px) {
