@@ -4,7 +4,6 @@ import CartContext from "../context/cart/CartContext";
 import "./Style/cartItem.css";
 import { Trash, PlusCircle, MinusCircle } from "react-feather";
 //temp img import
-import productImage from "../img/product/Messi_PSG.jpeg";
 
 export const CartItem = ({ item }) => {
   const { removeItem } = useContext(CartContext);
