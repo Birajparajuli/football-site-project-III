@@ -39,6 +39,7 @@
 
 .delete-icon {
   color: rgb(196, 65, 65);
+  cursor: pointer;
 }
 
 .lock-icon {

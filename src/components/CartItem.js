@@ -20,7 +20,7 @@ export const CartItem = ({ item }) => {
               <h3>{item.name}</h3>
               <p> </p>
             </div>
-            <div className="delete-icon">
+            <div className="delete-icon" onClick={() => removeItem(item.id)}>
               <Trash />
             </div>
           </div>
