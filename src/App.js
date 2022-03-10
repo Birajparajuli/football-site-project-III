@@ -18,6 +18,7 @@ import SignIn from "./pages/signUp/SignIn";
 import LogIn from "./pages/logIn/LogIn";
 import PageNotFound from "./pages/404/PageNotFound";
 import CheckOut from "./pages/checkout/CheckOut";
+import AllProduct from "./pages/allProduct/AllProduct";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route exact path="/checkout">
           <CheckOut />
+        </Route>
+        <Route exact path="/all">
+          <AllProduct />
         </Route>
         <Route
           path="/admin"
