@@ -1,5 +1,6 @@
 import React from "react";
 import truck from "../img/truck.png";
+import { Link } from "react-router-dom";
 
 import "./Style/infoBox.css";
 function InfoBox() {
@@ -20,7 +21,10 @@ function InfoBox() {
             * Free Shipping Inside KTM Valley Only, cost for Shipping Outside
             Valley <br /> will be informed to the concerned customer.{" "}
           </p>
-          <button className="btn">Browse Products</button>
+          {/* <button className="btn">Browse Products</button> */}
+          <Link to="/all" className="btn">
+            Browse Products
+          </Link>
         </div>
       </div>
     </div>

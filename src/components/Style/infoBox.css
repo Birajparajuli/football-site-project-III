@@ -51,4 +51,8 @@
   transition: all 0.2s ease-in-out;
 }
 
+.btn {
+  text-decoration: none;
+  margin-top: 10px;
+}
 /* InfoBox --End  */

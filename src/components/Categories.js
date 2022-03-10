@@ -6,7 +6,7 @@ import boot from ".././img/categories/boot.svg";
 import gloves from ".././img/categories/gloves.svg";
 import offer from ".././img/categories/offer.svg";
 import jersey from ".././img/categories/jersey.svg";
-import statue from ".././img/categories/statue.svg";
+// import statue from ".././img/categories/statue.svg";
 import all from ".././img/categories/all.svg";
 
 const Categories = () => {
