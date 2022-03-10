@@ -7,11 +7,16 @@ import gloves from ".././img/categories/gloves.svg";
 import offer from ".././img/categories/offer.svg";
 import jersey from ".././img/categories/jersey.svg";
 import statue from ".././img/categories/statue.svg";
+import all from ".././img/categories/all.svg";
 
 const Categories = () => {
   return (
     <div className="categories-container">
       <div className="categories">
+        <Link to="/all" className=" category category-1">
+          <img src={all} alt="offer" />
+          <p>All Products</p>
+        </Link>
         <Link
           to="/categories/615886974d598100165656a7"
           className=" category category-1"
@@ -39,13 +44,6 @@ const Categories = () => {
         >
           <img src={boot} alt="boot" />
           <p>Boots</p>
-        </Link>
-        <Link
-          to="/categories/615886cc4d598100165656a8"
-          className="category category-4"
-        >
-          <img src={statue} alt="boot" />
-          <p>Collectibles</p>
         </Link>
 
         <Link
