@@ -6,7 +6,7 @@ const AllProduct = () => {
   return (
     <>
       <PageHeader header={"All Products"} />
-      <ProductList param={"/products/all"} />
+      <ProductList param={" "} />
     </>
   );
 };
