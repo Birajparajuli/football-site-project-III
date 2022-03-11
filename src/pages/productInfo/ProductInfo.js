@@ -16,6 +16,7 @@ import {
 function ProductInfo() {
   const { addToCart } = useContext(CartContext);
   const { id } = useParams();
+
   const { loading, error, data } = useFetch(
     "https://football-site-backend.herokuapp.com/products/" + id
   );

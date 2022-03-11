@@ -21,7 +21,7 @@ function Home() {
       <div className="product-list-container">
         <div className="product-list-with-title">
           <h2 className="list-header">Trending Products</h2>
-          <ProductList />
+          <ProductList param={"?categories=615886974d598100165656a7"} />
         </div>
       </div>
 
@@ -37,8 +37,8 @@ function Home() {
 
       <div className="product-list-container">
         <div className="product-list-with-title">
-          <h2 className="list-header">On Discount</h2>
-          <ProductList />
+          <h2 className="list-header">Best Offers</h2>
+          <ProductList param={"?categories=615886974d598100165656a7"} />
         </div>
       </div>
       <NewsLetter />

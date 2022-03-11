@@ -5,9 +5,9 @@ import "./Style/productList.css";
 import useFetch from "../hooks/useFetch";
 import SkeletonProduct from "./skeletons/SkeletonProduct";
 
-function ProductList() {
+function ProductList({ param }) {
   const { loading, error, data } = useFetch(
-    "https://football-site-backend.herokuapp.com/products"
+    `https://football-site-backend.herokuapp.com/products${param}`
   );
 
   if (loading) return <SkeletonProduct />;

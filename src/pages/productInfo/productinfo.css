@@ -113,8 +113,9 @@
   color: var(--color-2);
 }
 
-@media (max-width: 10px) {
+@media (max-width: 896px) {
   .info-container {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display: flex;
+    flex-direction: column;
   }
 }

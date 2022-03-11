@@ -10,11 +10,11 @@ const Cart = () => {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <div>
+    <div className="cart-container">
       <PageHeader header={"Cart"} />
       <div className="cart-wrapper">
         {cartItems.length === 0 ? (
-          <h4>Cart is empty</h4>
+          <h2 className="cart-empty-header">Cart is empty</h2>
         ) : (
           <div className="cart-list">
             {cartItems.map((item) => (

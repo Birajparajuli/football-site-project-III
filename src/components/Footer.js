@@ -50,10 +50,10 @@ function Footer() {
           <Link className="footer-link" to="/">
             Home
           </Link>
-          <Link className="footer-link" to="/">
+          <Link className="footer-link" to="/cart">
             Cart
           </Link>
-          <Link className="footer-link" to="/">
+          <Link className="footer-link" to="/all">
             Categories
           </Link>
         </div>
@@ -72,7 +72,7 @@ function Footer() {
       </div>
       <div className="bottom-footer">
         <div className="copyright">
-          <h4>© 2021 Biraj Parajuli</h4>
+          <h4>© {new Date().getFullYear()} Biraj, Aashish and Saurav</h4>
         </div>
         <div className="payment-icons">
           <FaCcPaypal className="payment-icon" />

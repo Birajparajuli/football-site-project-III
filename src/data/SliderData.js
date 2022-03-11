@@ -7,7 +7,7 @@ import image5 from "../img/slider/neymar.png";
 export const SliderData = [
   {
     title: "Messi jersey PSG",
-    price: "Rs. 5999",
+    price: "Rs. 1450",
     path: "details/6135abd00c5cea2e3c1b5e16",
     image: image1,
     alt: "Messi Jersey",
@@ -15,7 +15,7 @@ export const SliderData = [
   },
   {
     title: "Ronaldo Jersey MU",
-    price: "Rs. 4999",
+    price: "Rs. 1450",
     path: "/details/6135ac280c5cea2e3c1b5e19",
     image: image2,
     alt: "Ronaldo Jersey",
@@ -23,7 +23,7 @@ export const SliderData = [
   },
   {
     title: "Neymar Jersey PSG",
-    price: "Rs. 4525",
+    price: "Rs. 1450",
     path: "/homes",
     image: image5,
     alt: "Messi Jersey",
@@ -31,7 +31,7 @@ export const SliderData = [
   },
   {
     title: "Haaland Jersey BVB",
-    price: "Rs. 4525",
+    price: "Rs. 1450",
     path: "/homes",
     image: image4,
     alt: "Messi Jersey",
@@ -39,7 +39,7 @@ export const SliderData = [
   },
   {
     title: "Ramos Jersey PSG",
-    price: "Rs. 4525",
+    price: "Rs. 1450",
     path: "/homes",
     image: image3,
     alt: "Messi Jersey",
