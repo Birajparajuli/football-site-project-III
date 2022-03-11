@@ -1,8 +1,11 @@
 import image1 from "../img/slider/messi.png";
 import image2 from "../img/slider/ronaldo.png";
 import image3 from "../img/slider/ramos.png";
-import image4 from "../img/slider/haland.png";
-import image5 from "../img/slider/neymar.png";
+// import image4 from "../img/slider/haland.png";
+// import image5 from "../img/slider/neymar.png";
+import image6 from "../img/slider/liverpool.png";
+import image7 from "../img/slider/barca.png";
+import image8 from "../img/slider/real.png";
 
 export const SliderData = [
   {
@@ -22,26 +25,26 @@ export const SliderData = [
     label: "View Product",
   },
   {
-    title: "Neymar Jersey PSG",
+    title: "Liverpool Jersey",
     price: "Rs. 1450",
-    path: "/homes",
-    image: image5,
+    path: "/details/622b40717b22e100165afa11",
+    image: image6,
     alt: "Messi Jersey",
     label: "Learn More",
   },
   {
-    title: "Haaland Jersey BVB",
+    title: "Barcelona Jersey",
     price: "Rs. 1450",
-    path: "/homes",
-    image: image4,
+    path: "/details/622b3d817b22e100165afa0b",
+    image: image7,
     alt: "Messi Jersey",
     label: "Learn More",
   },
   {
-    title: "Ramos Jersey PSG",
+    title: "Real Madrid Jersey",
     price: "Rs. 1450",
-    path: "/homes",
-    image: image3,
+    path: "/details/622b3f757b22e100165afa0e",
+    image: image8,
     alt: "Messi Jersey",
     label: "Learn More",
   },

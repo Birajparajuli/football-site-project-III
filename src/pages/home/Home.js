@@ -27,8 +27,8 @@ function Home() {
 
       <div className="product-list-container">
         <div className="product-list-with-title">
-          <h2 className="list-header">New Arrivals</h2>
-          <ProductList />
+          <h2 className="list-header">Top Jersey</h2>
+          <ProductList param={"?categories=6138e7c3c143fa3c74d5e2ea"} />
         </div>
       </div>
 
