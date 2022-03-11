@@ -63,13 +63,13 @@ function Navbar() {
         <Link className="logo-text mobile-logo" to="/">
           FH
         </Link>
-        <div className="icon">
+        <Link to="/all" className="icon">
           <Grid />
-        </div>
+        </Link>
         <div className="icon cart-icon">
           <Link className="" to={`cart`}>
             <ShoppingCart />
-            <span>2</span>
+            {cartItems.length > 0 && <span>{cartItems.length}</span>}
           </Link>
         </div>
         <div className="icon">
