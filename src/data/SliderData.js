@@ -1,6 +1,6 @@
 import image1 from "../img/slider/messi.png";
 import image2 from "../img/slider/ronaldo.png";
-import image3 from "../img/slider/ramos.png";
+// import image3 from "../img/slider/ramos.png";
 // import image4 from "../img/slider/haland.png";
 // import image5 from "../img/slider/neymar.png";
 import image6 from "../img/slider/liverpool.png";

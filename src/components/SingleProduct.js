@@ -28,7 +28,7 @@ const SingleProduct = ({ product }) => {
               </span>
             ))}
           </div>
-          <Link className="link" to={`/details/${product.id}`}>
+          <Link className="link" exact to={`/details/${product.id}`}>
             <h5>{product.name}</h5>
             <h4>Rs.{product.price}</h4>
           </Link>
